@@ -14,6 +14,7 @@ class DataPreprocessingService:
         print(gender_columns)
 
         embarked_columns = pd.get_dummies(preprocessed_dataset["Embarked"], prefix="Embarked")
+        # embarked_columns = pd.get_dummies(preprocessed_dataset["Pclass"], prefix="Pclass")
         print(embarked_columns)
 
         preprocessed_dataset = pd.concat([preprocessed_dataset, gender_columns], axis=1)

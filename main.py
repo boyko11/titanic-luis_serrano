@@ -19,4 +19,6 @@ if __name__ == '__main__':
 
     ModelingService.model(dataset_file_preprocessed)
 
+    ModelingService.grid_search_svm(dataset_file_preprocessed)
+
     print('Done')
